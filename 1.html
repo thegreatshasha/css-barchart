@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Created using jsbin.com
+  Source can be edited via http://jsbin.com/osuley/4/edit
+-->
+<head>
+<meta charset=utf-8 />
+<title>Do you believe in horoscopes</title>
+  <div id="yes">
+    <p class="percent">35%</p>
+  </div>
+  <div id="no">
+    <p class="percent">65%</p>
+  </div>
+
+<style id="jsbin-css">
+.percent{
+  color:#fff;
+  height:20px;
+  text-decoration:underline;
+  text-indent:15px;
+  -webkit-animation-iteration-count:5;
+  -webkit-animation-timing-function:ease;
+}
+
+#yes{
+  width:180px;
+}
+
+#no{
+  width:590px;
+}
+
+#yes .percent{
+  -webkit-animation-name:yesanimation;
+  -webkit-animation-duration:5s;
+  
+  background-color:green;
+}
+
+#no .percent{
+  -webkit-animation-name:noanimation;
+  -webkit-animation-duration:10s;
+  
+  background-color:red;
+}
+
+@-webkit-keyframes yesanimation {
+  0% {
+    width: 0;
+  } 
+  
+  
+  50%{
+    width:100%;
+  }
+  
+  100% {
+    width:0%;
+  }
+  
+  
+}
+
+@-webkit-keyframes noanimation {
+  0% {
+    width: 0;
+  } 
+  
+  
+  50%{
+    width:100%;
+  }
+  
+  100% {
+    width:0%;
+  }
+}
+</style>
+</head>
+<body>
+  
+<script>
+
+</script>
+</body>
+</html>
